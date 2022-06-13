@@ -14,6 +14,6 @@ RSpec.describe Flight, type: :model do
     FlightPassenger.create!(flight_id: @flight1.id, passenger_id: @mike.id)
     FlightPassenger.create(flight_id: @flight1.id, passenger_id: @jenn.id)
 
-    expect(@flight1.adults_only).to eq([@nick,@mike])
+    expect(@flight1.adults_only).to eq([@nick, @mike])
   end
 end

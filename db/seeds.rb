@@ -2,7 +2,11 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
+  FlightPassenger.destroy_all
   Airline.destroy_all
+  Flight.destroy_all
+  Passenger.destroy_all
+
   @united = Airline.create!(name: "United Airlines")
   @flight1 = @united.flights.create!(number: 1234, date: "01-01-2020", departure_city: "Denver", arrival_city: "Dayton")
   @flight2 = @united.flights.create!(number: 5678, date: "01-01-2021", departure_city: "Baton Rouge", arrival_city: "New Orleans")
